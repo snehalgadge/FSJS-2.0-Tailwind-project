@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>VScode-Education</title>
 </head>
 <body>
@@ -33,12 +34,15 @@
             </div>
         </section>
 
+
         <!-- Version bar -->
         <section class="flex flex-row justify-center items-center h-12 bg-zinc-800">
             <h1 class="text-white mr-2">Build for</h1>
             <h1 class="text-sky-600 mr-2">Educational</h1>
             <h1 class="text-white">Purpose</h1>
         </section>
+
+
         <!-- Main Hero Section -->
         <section class="h-3/5 flex justify-center bg-zinc-900">
             <div class="flex flex-col items-center mt-24 mr-10 text-white">
@@ -59,7 +63,7 @@
                                 d="M19 9l-7 7-7-7"></path></svg>
                         </button>   
                     </div>
-                <p class="flex flex-row items-center space-x-2 mt-4 mb-5 px-2 py-1 pb-1 rounded bg-zinc-800">
+                <p class="flex flex-row items-center space-x-1 mt-4 mb-5 px-2 py-1 pb-1 rounded-md bg-zinc-800">
                     <a class="text-[#005BA4]" href="#">Web</a><span>,</span>
                     <a class="text-[#005BA4]" href="#">Insiders editions</a>
                     <span>or,</span>
@@ -68,10 +72,31 @@
                 <p class="text-zinc-500">By using VS Code, you agree to its</p>
                 <a class="text-[#005BA4]" href="#">Build for Educational Purpose</a>
             </div>
-            <img class="w-[50%] mt-8" src="./image/home-screenshot.png" alt="Home Screen">
+            <img class="w-[50%] mt-4 shadow-md" src="./image/home-screenshot.png" alt="Home Screen">
         </section>
 
-        
+
+        <!-- Icon Bar -->
+        <section>
+            <div class="flex flex-row justify-center items-center space-x-9 h-48 ">
+                <div class="flex flex-col justify-center items-center h-32 w-52">
+                    <i class="fa-regular fa-lightbulb fa-4x"></i>
+                    <h1 class="">IntelliSense</h1>
+                </div>
+                <div class="flex flex-col justify-center items-center h-48 w- bg-zinc-100 hover:bg-zinc-400">
+                    <i class="fa-solid fa-bug fa-4x"></i>
+                    <h1>Run and debug</h1>
+                </div>
+                <div class=" flex flex-col justify-center items-center h-32 w-52">
+                    <i class="fa-solid fa-code-branch fa-4x ml-5 mb-3"></i>
+                    <h1>Build-in Git</h1>
+                </div>
+                <div class="flex flex-col justify-center items-center h-32 w-52">
+                    <i class="fa-solid fa-border-all fa-4x ml-2 mb-3"></i>
+                    <h1>Extensions</h1>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
