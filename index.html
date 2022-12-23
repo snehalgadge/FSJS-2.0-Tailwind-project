@@ -12,23 +12,23 @@
     <div class="m-0 p-0">
 
         <!-- navbar -->
-        <section class="flex flex-row space-between items-center h-[60px] bg-zinc-900">
+        <section class="flex flex-row space-between items-center h-[50px] bg-zinc-900 sticky top-0">
             <img class="w-[1.5%] ml-48" src="./image/vscode.png" alt="vscodeLogo">
             <span class="text-white text-2xl ml-3">Visual Studio Code</span>
-            <ul class="flex flex-row items-center ml-10 space-x-6 font-bold text-zinc-500">
-               <li class="text-base hover:text-white">Docs</li>
-               <li class="text-base hover:text-white">Update</li>
-               <li class="text-base hover:text-white">Blogs</li>
-               <li class="text-base hover:text-white">API</li>
-               <li class="text-base hover:text-white">Extensions</li>
-               <li class="text-base hover:text-white">FAQ</li>
-               <li class="text-base hover:text-white">Learn</li>
+            <ul class="flex flex-row items-center ml-10 space-x-4 text-zinc-500">
+               <li class="text-base hover:text-white hover:cursor-pointer">Docs</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">Update</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">Blogs</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">API</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">Extensions</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">FAQ</li>
+               <li class="text-base hover:text-white hover:cursor-pointer">Learn</li>
             </ul>
-            <div class="flex flex-row ml-52 h-[100%]">
-                <input class="border-slate-700 pl-10 w-46 bg-zinc-700 text-white " type="text" placeholder="Search Docs">
-                <img class="w-8 invert absolute  mt-4 pl-2" src="./image/search.jpg" alt="search Docs">
+            <div class="flex flex-row ml-40 h-[100%] hover:cursor-pointer">
+                <input class="border-slate-700 pl-10 w-[180px] bg-zinc-700 text-white font-thin" type="text" placeholder="Search Docs">
+                <img class="w-8 invert absolute  mt-[12px] pl-2" src="./image/search.jpg" alt="search Docs">
             </div>
-            <div class="bg-[#005BA4] h-[100%] w-[10%] pt-3 flex items-center text-white">
+            <div class="bg-[#005BA4] h-[100%] w-[10%] pt-3 flex items-center text-white hover:cursor-pointer">
                 <img class="w-8 invert pb-3 ml-1 mr-2" src="./image/download.png" alt="download">
                 <span class="text-white pb-3">Download</span>
             </div>
@@ -44,7 +44,7 @@
 
 
         <!-- Main Hero Section -->
-        <section class="h-3/5 flex justify-center bg-zinc-900">
+        <section class="h-[100%] flex justify-center bg-zinc-900 pb-4">
             <div class="flex flex-col items-center mt-24 mr-10 text-white">
                 <h1 class="text-6xl">Code editing.</h1>
                 <h1 class="text-6xl font-bold mt-2">Redefined.</h1>
@@ -98,47 +98,126 @@
             </div>
         </section>
 
-        <!-- Comment Section -->
-        <section>
-            <div class="flex flex-row justify-center items-center h-[100%] w-full bg-zinc-100">
-                <div class="flex flex-row justify-center items-center">
-                    <div class="flex flex-row items-center ml-60 mr-8 text-8xl text-gray-400 hover:text-gray-500 hover:cursor-pointer">
-                        <i class="fa-duotone fa-less-than"></i>
-                    </div>
-                  <div class="h-16 w-16">
-                    <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                 </div>
+
+    <!-- carousal Section -->
+    <section class="border-box bg-[#f5f5f5] h-96 pt-10">
+        <div class="flex items-center justify-center space-x-4 mt-3">
+
+            <div class="h-40 mt-20"><i class="fa-solid fa-less-than text-gray-500"></i></div>
+
+            <div class="flex flex-row w-96 space-x-2">
+                <img class="h-20 w-96 rounded-[100%]" src="./image/cmnt_person1.jpg" alt="person">
                 <div>
-                    <a href="#">Una kravets</a>
-                    <span>@Una</span>
-                    <i class="fa-brands fa-twitter text-gray-300"></i>
+                    <h1>Una Kravets <span class="text-gray-500">@Una</span> <span class="ml-12"><i class="fa-brands fa-twitter text-gray-300"></i></span></h1>
                     <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                  </div>
                 </div>
-                <div class="flex flex-row">
-                  <div>
-                    <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                 </div>
+            </div>
+
+            <div class="flex flex-row w-96 space-x-2">
+                <img class="h-20 w-96 rounded-full" src="./image/cmnt_person2.jpg" alt="person">
                 <div>
-                    <a href="#">Una kravets</a>
-                    <span>@Una</span>
-                    <i class="fa-brands fa-twitter text-gray-300"></i>
-                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                  </div>
+                    <h1>Jonathan Dunlap <span class="text-gray-500">@jadbox</span> <span class="ml-12"><i class="fa-brands fa-twitter text-gray-300"></i></span></h1>
+                    <p>VS Code will have deep remote development. You can connect to a container running a different OS and use any VS Code plugins, linting, debugging for that environment. 🔥🔥🔥</p>
                 </div>
-                <div class="flex flex-row">
-                  <div>
-                    <img class="h-16 w-16 rounded-full" src="https://images.unsplash.com/photo-1566228015668-4c45dbc4e2f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ymx1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="">
-                 </div>
+            </div>
+
+            <div class="flex flex-row w-96 space-x-2">
+                <img class="h-20 w-96 rounded-full" src="./image/cmnt_person3.jpg" alt="person">
                 <div>
-                    <a href="#">Una kravets</a>
-                    <span>@Una</span>
-                    <i class="fa-brands fa-twitter text-gray-300"></i>
-                    <p>VS @code does so many things right. I’m constantly impressed by the UX, and customizing workspace / user preferences is no exception. 🙌🏼💯 It just keeps getting better ❤️</p>
-                  </div>
+                    <h1>Pavithra Kodmad <span class="text-gray-500">@PKodmad</span> <span class="ml-12"><i class="fa-brands fa-twitter text-gray-300"></i></span></h1>
+                    <p>VS Code is my most used and favorite editor. I love being able to customize the editor - changing the layout, the icons, fonts and color scheme is so easy!</p>
                 </div>
-             </div>
-        </section>
+            </div>
+
+            <div class="ml-16"><i class="fa-solid fa-greater-than text-gray-500"></i></div>
+
+        </div>
+    </section>
+
+<!-- Meet IntelliSense -->
+ <section class="border-box h-80 pt-20 mb-20 bg-white ">
+    <div class="flex flex-row justify-center ml-40 mr-40">
+      <img src="./image/home-intellisense.svg" alt="Meet IntelliSense">
+       <div class="flex flex-col ml-20">
+        <h1 class="text-4xl text-gray-800 font-light font-Segoe UI">Meet IntelliSense</h1>
+        <p class="text-lg text-gray-600 font-normal font-Segoe UI leading-10 mt-8">Go beyond syntax highlighting and autocomplete with IntelliSense, which provides smart completions based on variable types, function definitions, and imported modules.</p>
+       </div>
     </div>
+ </section>
+
+ <!-- Print statement debugging -->
+ <section class="border-box h-96 pt-20  bg-[#f5f5f5]">
+    <div class="flex flex-row justify-center ml-40 mr-40">
+        <div class="flex flex-col mr-20">
+            <h1 class="text-4xl text-gray-800 font-light font-Segoe UI">Print statement debugging is a thing of the past.</h1>
+            <p class="text-lg text-gray-600 font-normal font-Segoe UI mt-8 leading-10 pr-30">Debug code right from the editor. Launch or attach to your running apps and debug with break points, call stacks, and an interactive console.</p>
+        </div>
+        <img src="./image/home-debug.svg" alt="debug">
+    </div>
+ </section>
+
+ <!-- Git commands built-in. -->
+<section class="border-box h-80 pt-20 mb-20 bg-white ">
+    <div class="flex flex-row justify-center ml-40 mr-40">
+        <img src="./image/home-git.svg" alt="home-git">
+         <div class="flex flex-col ml-20">
+          <h1 class="text-4xl text-gray-800 font-light font-Segoe UI">Git commands built-in.</h1>
+          <p class="text-lg text-gray-600 font-normal font-Segoe UI leading-10 ">Working with Git and other SCM providers has never been easier. Review diffs, stage files, and make commits right from the editor. Push and pull from any hosted SCM service.</p>
+         </div>
+      </div>
+</section>
+
+<!-- Extensible and customizable -->
+<section class="border-box h-96 pt-20  bg-[#f5f5f5]">
+    <div class="flex flex-row justify-center ml-40 mr-40">
+        <div class="flex flex-col mr-20">
+            <h1 class="text-4xl text-gray-800 font-light font-Segoe UI">Extensible and customizable.</h1>
+            <p class="text-lg text-gray-600 font-normal font-Segoe UI mt-8 leading-10">Want even more features? Install extensions to add new languages, themes, debuggers, and to connect to additional services. Extensions run in separate processes, ensuring they won't slow down your editor. <a class="text-sky-600"href="#">Learn more about extensions.</a></p>
+        </div>
+            <img class="w-76 h-60 mr-48 mb-20 hover:cursor-pointer hover:p-4" src="./image/Hundreds-of-Extensions.png" alt="Hundreds-of-Extensions">
+    </div>
+ </section>
+
+ <!-- Deploy with confidence and ease -->
+ <section class="border-box h-80 pt-20 mb-20 bg-white ">
+    <div class="flex flex-row justify-center ml-40 mr-40">
+        <img src="./image/home-azure.svg" alt="home-azure">
+         <div class="flex flex-col ml-20">
+          <h1 class="text-4xl text-gray-800 font-light font-Segoe UI">Deploy with confidence and ease</h1>
+          <p class="text-lg text-gray-600 font-normal font-Segoe UI leading-10 mt-8">With <a class="text-sky-600" href="#">Microsoft Azure</a>  you can deploy and host your React, Angular, Vue, Node, Python (and more!) sites, store and query relational and document based data, and scale with serverless computing, all with ease,<a class="text-sky-600" href="#"> all from within VS Code.</a></p>
+         </div>
+      </div>
+</section>
+
+
+<!-- VS Code for -->
+<section class="border-box h-full pt-14 pb-20 bg-[#f5f5f5] ">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="py-5 text-3xl text-gray-700 font-thin">VS Code for</h1>
+        <ul class="flex flex-row justify-center items-center py-2 space-x-20">
+            <li><img class="inline h-8" src="./image/javascript.svg" alt="js">Javascript</li>
+            <li><img class="inline h-8" src="./image/python.svg" alt="Python">Pthon</li>
+            <li><img class="inline h-8" src="./image/java.svg" alt="java">Java</li>
+            <li><img class="inline h-8" src="./image/markdown.svg" alt="markdown">Markdown</li>
+            <li><img class="inline h-8" src="./image/typescript.svg" alt="typescript">Typescript</li>
+            <li><img class="inline h-8" src="./image/cpp.svg" alt="C++">C/C++</li>
+        </ul>
+
+        <ul class="flex flex-row justify-center items-center py-2 space-x-20 ">
+            <li><img class="inline h-8" src="./image/json.svg" alt="json">Json</li>
+            <li><img class="inline h-8" src="./image/powershell.svg" alt="powershell">PowerShell</li>
+            <li><img class="inline h-8" src="./image/html.svg" alt="html/css">HTML/CSS</li>
+            <li><img class="inline h-8" src="./image/csharp.svg" alt="csharp">C#</li>
+            <li><img class="inline h-8" src="./image/php.svg" alt="php">PHP</li>
+            <li><img class="inline h-8" src="./image/yaml.svg" alt="yaml">YAML</li>
+        </ul>
+
+        <a class="mt-2 mb-14 text-sky-800 text-xl hover:underline hover:cursor-pointer" href="#">and many more languages on the Marketplace...</a>
+        <button class="bg-[#0066b8] hover:bg-blue-700 text-white font-semibold p-2  w-56 h-16 text-xl">Get Started Now</button>
+    </div>
+</section>
+
+
+</div>
 </body>
 </html>
